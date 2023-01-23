@@ -134,29 +134,6 @@ body>header {
     }
 }
 
-.animation--shake {
-    animation: shake .2s linear infinite normal;
-    display: inline-block
-}
-
-@keyframes shake {
-    0% {
-        transform: rotate(0)
-    }
-
-    25% {
-        transform: rotate(-2deg)
-    }
-
-    75% {
-        transform: rotate(2deg)
-    }
-
-    to {
-        transform: rotate(0)
-    }
-}
-
 .text--accent {
     color: var(--accent)
 }
