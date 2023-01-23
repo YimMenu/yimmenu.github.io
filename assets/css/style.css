@@ -353,6 +353,11 @@ footer>a {
         display: flex;
         justify-content: center
     }
+
+}
+
+@media (prefers-reduced-motion) {
+    @keyframes breathing {}
 }
 
 #metadata_container {
