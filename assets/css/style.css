@@ -1,0 +1,392 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+    -moz-tab-size: 4;
+    tab-size: 4;
+    word-break: normal
+}
+
+*,
+:after,
+:before {
+    background-repeat: no-repeat;
+    box-sizing: inherit
+}
+
+:after,
+:before {
+    text-decoration: inherit;
+    vertical-align: inherit
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+main {
+    display: block
+}
+
+[hidden] {
+    display: none
+}
+
+a {
+    background-color: transparent
+}
+
+a:active,
+a:focus,
+a:hover {
+    outline-width: 0
+}
+
+[disabled] {
+    cursor: default
+}
+
+img {
+    border-style: none
+}
+
+[aria-busy=true] {
+    cursor: progress
+}
+
+[aria-controls] {
+    cursor: pointer
+}
+
+[aria-disabled=true] {
+    cursor: default
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+    --accent: #a8bef5;
+    --background: #111;
+    --text-color: #fff;
+    --z-1-bg: #222;
+    --button-background: rgba(34, 34, 34, .7);
+    --button-background-hover: #643760;
+    --button-color-hover: #ffd7f6;
+    --header-background-overlay: rgba(100, 55, 96, .5)
+}
+
+@media (prefers-color-scheme:light) {
+    :root {
+        --accent: #2c60e8;
+        --background: #f2f2fd;
+        --text-color: #000;
+        --z-1-bg: #dce1ff;
+        --button-background: rgba(220, 225, 255, .7);
+        --button-background-hover: #ffd7f6;
+        --button-color-hover: #320a32;
+        --header-background-overlay: #ffd7f6
+    }
+}
+
+html {
+    background-color: var(--background);
+    font-family: Roboto, sans-serif
+}
+
+body {
+    align-items: center;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column
+}
+
+body>header {
+    background: url(../images/alpine.webp) var(--header-background-overlay);
+    background-blend-mode: luminosity;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+    color: #fff;
+    font-size: 3em;
+    margin: 2rem 1rem;
+    padding: 10rem 2rem;
+    text-align: center;
+    text-shadow: #000 0 0 10px
+}
+
+.animation--breathe {
+    animation: breathing 3s ease-in-out infinite normal;
+    display: inline-block
+}
+
+@keyframes breathing {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(.9)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.animation--shake {
+    animation: shake .2s linear infinite normal;
+    display: inline-block
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0)
+    }
+
+    25% {
+        transform: rotate(-2deg)
+    }
+
+    75% {
+        transform: rotate(2deg)
+    }
+
+    to {
+        transform: rotate(0)
+    }
+}
+
+.text--accent {
+    color: var(--accent)
+}
+
+.text--normal {
+    color: var(--text-color)
+}
+
+li {
+    list-style-position: inside
+}
+
+.decoration--wavy {
+    text-decoration-color: var(--accent);
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: .1rem;
+    transition-duration: .2s
+}
+
+.decoration--wavy.interactive:hover {
+    color: var(--accent)
+}
+
+.decoration--underline {
+    text-decoration-color: var(--accent);
+    text-decoration-line: underline;
+    text-decoration-style: underline;
+    text-decoration-thickness: .1rem
+}
+
+.background--z-1 {
+    border-radius: 2rem;
+    padding: 1rem
+}
+
+.background--z-1,
+nav {
+    background-color: var(--z-1-bg)
+}
+
+nav {
+    align-items: center;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-between;
+    margin: 0 1rem;
+    max-width: 100vw;
+    min-width: 70vw;
+    overflow-x: auto;
+    padding: 1rem 2rem;
+    width: auto
+}
+
+nav,
+nav>header {
+    font-weight: 700
+}
+
+nav>header {
+    color: var(--text-color);
+    cursor: default;
+    font-size: x-large
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+    color: var(--text-color);
+    text-decoration-color: transparent;
+    text-decoration-style: wavy;
+    text-decoration-thickness: .1rem;
+    transition-duration: .2s
+}
+
+nav a:focus-visible,
+nav a:hover {
+    color: var(--accent);
+    text-decoration-color: var(--accent)
+}
+
+nav>ol {
+    align-items: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1rem
+}
+
+nav>ol>li {
+    display: inline-block
+}
+
+nav>ol>li.icon,
+nav>ol>li.icon>a {
+    height: 24px;
+    width: 24px
+}
+
+nav>ol>li.icon>a {
+    display: inline-block
+}
+
+main {
+    gap: 4rem;
+    padding: 0 1rem 4rem
+}
+
+.card,
+main {
+    display: flex;
+    flex-direction: column
+}
+
+.card {
+    background-color: var(--z-1-bg);
+    border-radius: 2rem;
+    gap: 1rem;
+    padding: 2rem
+}
+
+.card>header {
+    align-items: center;
+    display: inline-flex;
+    font-size: xx-large;
+    font-weight: 700;
+    gap: 1rem
+}
+
+.card svg {
+    height: 24px;
+    width: 24px
+}
+
+a.card {
+    align-items: center;
+    background-color: var(--button-background);
+    color: var(--text-color);
+    display: inline-flex;
+    flex-direction: row;
+    font-size: xx-large;
+    font-weight: 700;
+    text-decoration: none;
+    transition-duration: .2s
+}
+
+a.card:hover {
+    background-color: var(--button-background-hover);
+    color: var(--button-color-hover)
+}
+
+.card-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: minmax(0, 1fr)
+}
+
+footer {
+    background-color: var(--z-1-bg);
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    font-size: larger;
+    line-height: 1.5;
+    margin: 0 1rem;
+    max-width: 100vw;
+    min-width: 70vw;
+    padding: 2rem;
+    text-align: center;
+    width: auto
+}
+
+footer>a {
+    color: var(--accent);
+    text-decoration-color: var(--accent);
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: .1rem
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    main {
+        padding-left: 2rem;
+        padding-right: 2rem
+    }
+
+    body>header {
+        margin-left: 2rem;
+        margin-right: 2rem
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .card-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr))
+    }
+
+    main {
+        padding-left: 4rem;
+        padding-right: 4rem
+    }
+
+    body>header {
+        margin-left: 4rem;
+        margin-right: 4rem
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .guide {
+        display: flex;
+        justify-content: center
+    }
+}
+
+#metadata_container {
+    column-gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: monospace;
+    justify-content: center;
+    margin: 1rem 0
+}
+
+#metadata_container[data-hidden=true] {
+    display: none
+}
