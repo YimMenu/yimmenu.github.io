@@ -70,7 +70,8 @@ img {
     --button-background: rgba(34, 34, 34, .7);
     --button-background-hover: #643760;
     --button-color-hover: #ffd7f6;
-    --header-background-overlay: rgba(100, 55, 96, .5)
+    /* --header-background-overlay: rgba(100, 55, 96, .5); */
+    /* --header-bg: url(../images/code-dark.webp); */
 }
 
 @media (prefers-color-scheme:light) {
@@ -82,7 +83,8 @@ img {
         --button-background: rgba(220, 225, 255, .7);
         --button-background-hover: #ffd7f6;
         --button-color-hover: #320a32;
-        --header-background-overlay: #ffd7f6
+        /* --header-background-overlay: #ffd7f6; */
+        /* --header-bg: url(../images/code-light.webp); */
     }
 }
 
@@ -95,20 +97,34 @@ body {
 }
 
 body>header {
-    background: url(../images/alpine.webp) var(--header-background-overlay);
+    /* background: var(--header-bg) var(--header-background-overlay);
     background-blend-mode: luminosity;
-    background-position: 0 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 2rem;
-    color: #fff;
+    background-repeat: repeat;
+    background-size: auto;
+    border-radius: 2rem; */
+    /* color: #fff; */
     font-size: 3em;
     margin: 2rem 0;
     padding: 4rem 2rem;
     text-align: center;
-    text-shadow: #000 0 0 10px;
+    /* text-shadow: #000 0 0 10px; */
     line-height: 1.6;
+    /* animation: scrolling 30s ease-in-out infinite normal; */
 }
+
+/* @keyframes scrolling {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 0% 100%;
+    }
+
+    to {
+        background-position: 0% 0%;
+    }
+} */
 
 body>header .background--z-1 {
     text-shadow: none;
