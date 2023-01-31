@@ -267,15 +267,18 @@ main {
 }
 
 a.card {
-    align-items: center;
     background-color: var(--button-background);
     color: var(--text-color);
+    text-decoration: none;
+    transition-duration: .2s
+}
+
+a.card:not(.fork) {
+    align-items: center;
     display: inline-flex;
     flex-direction: row;
     font-size: xx-large;
     font-weight: 700;
-    text-decoration: none;
-    transition-duration: .2s
 }
 
 a.card:hover {

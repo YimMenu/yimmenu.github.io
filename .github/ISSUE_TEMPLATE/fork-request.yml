@@ -1,0 +1,30 @@
+name: Fork addition request
+description: Add your YimMenu fork to the website
+title: "[fork]: Please add <fork_name> to the website"
+labels: fork
+body:
+- type: input
+  attributes:
+    label: Repository
+    description: Your menu's repo.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Short description
+    description: A 1-2 lines long promotional text about your menu for the website.
+  validations:
+    required: true
+- type: checkboxes
+  attributes:
+    label: Fork checklist
+    description: Only forks that match the requirements can be added.
+    options:
+      - label: My fork is based on YimMenu.
+        required: true
+      - label: My fork is open source.
+        required: true
+      - label: My fork has notable changes compared to vanilla YimMenu (like different GUI or original features).
+        required: true
+      - label: My fork does not track its users (including launchers & APIs).
+        required: true
