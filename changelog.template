@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YimMenu</title>
+    <title>Changelog | YimMenu</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
@@ -14,7 +14,7 @@
     <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#2c60e8">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#2c60e8">
-    <meta content="YimMenu" property="og:title">
+    <meta content="Changelog | YimMenu" property="og:title">
     <meta content="The free and Open-Source menu for GTA-V" property="og:description">
     <meta content='https://i.imgur.com/XgKFseu.png' property='og:image'>
     <meta name="description" content="The free and Open-Source menu for GTA-V">
@@ -22,10 +22,10 @@
 
 <body>
     <nav>
-        <header>Yim<span class="text--accent">Menu</span></header>
+        <header><a href="/">Yim<span class="text--accent">Menu</span></a></header>
         <ol>
             <!-- <li><a href="#features">Features</a></li> -->
-            <li><a href="#download">Download</a></li>
+            <li><a href="/#download">Download</a></li>
             <li><a href="/changelog.html" class="active">Changelog</a></li>
             <li class="icon"><a href="https://github.com/YimMenu/YimMenu/" rel="noreferrer noopener"><svg
                         aria-label="GitHub" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
