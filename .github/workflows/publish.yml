@@ -18,9 +18,13 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - uses: actions/checkout@v3
+
+      - name: Checkout YimMenu
+        uses: actions/checkout@v3
         with:
-          submodules: false
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          repository: YimMenu/YimMenu
+          path: YimMenu
+          fetch-depth: 0
 
       - name: Set up git-cliff
         uses: kenji-miyake/setup-git-cliff@v1
@@ -34,7 +38,7 @@ jobs:
           cp changelog.md changelog.txt
           npx --yes showdown makehtml -i changelog.md -o changelog_from_md.html
           node replace.js
-          rm -rf *.js *.template .github/
+          rm -rf *.js *.template .github/ changelog_from_md.html
           cp changelog.html changelog
 
       - name: Deploy
