@@ -41,7 +41,7 @@ jobs:
           cp changelog.md changelog.txt
           npx --yes showdown makehtml -i changelog.md -o changelog_from_md.html
           node replace.js
-          rm -rf *.js *.template .github/ changelog_from_md.html YimMenu/
+          rm -rf *.js *.template.html .github/ changelog_from_md.html YimMenu/
           cp changelog.html changelog
 
       - name: Deploy
