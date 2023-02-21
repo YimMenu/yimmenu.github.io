@@ -31,10 +31,13 @@ jobs:
 
       - name: Generate Changelog
         run: |
-          mv .github/changelog_generator.js .
-          mv .github/cliff.toml .
-          mv .github/replace.js .
+          mv .github/changelog_generator.js YimMenu
+          mv .github/cliff.toml YimMenu
+          mv .github/replace.js YimMenu
+          cd YimMenu
           git log  --format="%cs#%H" | node changelog_generator.js
+          cd ..
+          cp YimMenu/changelog.md .
           cp changelog.md changelog.txt
           npx --yes showdown makehtml -i changelog.md -o changelog_from_md.html
           node replace.js

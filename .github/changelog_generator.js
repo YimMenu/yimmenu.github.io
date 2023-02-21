@@ -43,6 +43,6 @@ stdin.on('end', function () {
 
     ranges.forEach(async (x, i) => {
         if (!x.start && !x.end) return;
-        await execPromise(`git-cliff --repo YimMenu ${x.start}${i - 1 < 0 ? "" : "~1"}..${x.end ?? ranges[i - 1 < 0 ? i + 1 : i - 1].start} ${i === 0 ? "-o" : "--prepend"} changelog.md`)
+        await execPromise(`git-cliff ${x.start}${i - 1 < 0 ? "" : "~1"}..${x.end ?? ranges[i - 1 < 0 ? i + 1 : i - 1].start} ${i === 0 ? "-o" : "--prepend"} changelog.md`)
     })
 });
