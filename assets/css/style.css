@@ -225,6 +225,17 @@ nav a:visited {
     transition-duration: .2s
 }
 
+nav a.active,
+nav a.active:link,
+nav a.active:visited {
+    color: var(--accent);
+    text-decoration-color: var(--accent);
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: .1rem;
+    transition-duration: .2s
+}
+
 nav a:focus-visible,
 nav a:hover {
     color: var(--accent);
@@ -374,4 +385,22 @@ footer>a {
 
 #metadata_container[data-hidden=true] {
     display: none
+}
+
+#changelog {
+    margin-top: 2rem;
+    word-break: break-all;
+}
+
+#changelog h1 {
+    margin-top: 0;
+}
+
+#changelog a {
+    font-weight: bold;
+    color: var(--accent);
+    text-decoration-color: var(--accent);
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: .1rem
 }

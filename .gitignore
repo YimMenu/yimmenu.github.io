@@ -2,3 +2,4 @@ node_modules/
 pnpm-lock.yaml
 postcss.config.js
 package.json
+changelog.md
