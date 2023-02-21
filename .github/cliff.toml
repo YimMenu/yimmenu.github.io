@@ -20,7 +20,7 @@ body = """
         ### {{ group | upper_first }}
         {% for commit in commits %}\
             {% if commit.message | length > 0 %}\
-                - {{ commit.message | upper_first }} ([{{ commit.id | truncate(length=7, end="") }}](https://github.com/YimMenu/YimMenu/commit/{{ commit.id }}), thanks [@{{ commit.author.name }}](https://github.com/{{ commit.author.name }}))\
+                - {{ commit.message | upper_first }} ([{{ commit.id | truncate(length=7, end="") }}](https://github.com/YimMenu/YimMenu/commit/{{ commit.id }}))\
             {% endif %}
         {% endfor %}
     {% endif %}\
