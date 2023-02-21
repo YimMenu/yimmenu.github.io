@@ -4,6 +4,7 @@ const stdin = process.openStdin();
 const { exec } = require("child_process");
 const util = require("util");
 const execPromise = util.promisify(exec);
+const delay = (timeout) => new Promise((resolve, reject) => setTimeout(resolve, timeout));
 
 let data = "";
 
@@ -44,5 +45,6 @@ stdin.on('end', function () {
     ranges.forEach(async (x, i) => {
         if (!x.start && !x.end) return;
         await execPromise(`git-cliff ${x.start}${i - 1 < 0 ? "" : "~1"}..${x.end ?? ranges[i - 1 < 0 ? i + 1 : i - 1].start} ${i === 0 ? "-o" : "--prepend"} changelog.md`)
+        await delay(100)
     })
 });
