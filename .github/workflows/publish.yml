@@ -33,7 +33,7 @@ jobs:
         run: |
           mv .github/changelog_generator.js YimMenu
           mv .github/cliff.toml YimMenu
-          mv .github/replace.js YimMenu
+          mv .github/replace.js .
           cd YimMenu
           git log  --format="%cs#%H" | node changelog_generator.js
           cd ..
