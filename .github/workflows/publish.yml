@@ -42,7 +42,6 @@ jobs:
           npx --yes showdown makehtml -i changelog.md -o changelog_from_md.html
           node replace.js
           rm -rf *.js *.template.html .github/ changelog_from_md.html YimMenu/
-          cp changelog.html changelog
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

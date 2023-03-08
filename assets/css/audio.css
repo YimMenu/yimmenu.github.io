@@ -1,0 +1,48 @@
+section {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+section[data-hidden="true"] {
+    display: none;
+}
+
+button,
+button:focus {
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: medium;
+}
+
+button:active {
+    outline: none;
+    border: none;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-weight: bold;
+    font-size: medium;
+}
+
+button.card:hover {
+    background-color: var(--button-background-hover);
+    color: var(--button-color-hover);
+    cursor: pointer;
+}
+
+.card:disabled,
+.card[disabled],
+.card[data-disabled="true"] {
+    cursor: not-allowed !important;
+    opacity: .5;
+    color: var(--text-color);
+    pointer-events: none;
+}
