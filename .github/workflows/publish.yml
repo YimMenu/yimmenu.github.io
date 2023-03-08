@@ -44,6 +44,8 @@ jobs:
           rm -rf *.js *.template.html .github/ changelog_from_md.html YimMenu/
           curl -o ./coi-serviceworker.min.js https://raw.githubusercontent.com/gzuidhof/coi-serviceworker/27a76b676c67202fb227deb97f9d911d41f55965/coi-serviceworker.min.js
 
+      - run: rm .gitignore
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
