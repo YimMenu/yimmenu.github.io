@@ -8,6 +8,7 @@ section {
 
 main {
     margin-bottom: 3rem;
+    gap: 2rem;
 }
 
 section[data-hidden="true"] {
@@ -35,6 +36,10 @@ button:active {
     gap: 1rem;
     font-weight: bold;
     font-size: medium;
+}
+
+#buttons>.card:not(:hover) {
+    background-color: var(--background);
 }
 
 button.card:hover {

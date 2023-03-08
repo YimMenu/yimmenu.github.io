@@ -26,7 +26,7 @@
         <p>Convert audio for use with YimMenu</p>
     </header>
     <main>
-        <section>
+        <section class="card">
             <h2>How-to</h2>
             <ol>
                 <li>Select the file you want to convert</li>
@@ -36,13 +36,13 @@
                 <li>Make sure the name is <code>audio.wav</code></li>
             </ol>
         </section>
-        <section>
+        <section class="card">
             <label for="uploader" class="file-label">
                 Select or drag and drop a file on the browse button.
             </label>
             <input type='file' accept=".mp3, .wav, .aac" id="uploader" />
         </section>
-        <section id="info-section" data-hidden="true">
+        <section id="info-section" data-hidden="true" class="card">
             <p id="message"></p>
             <label for="progressBar" id="progressBarLabel">0%</label>
             <progress id="progressBar" max="1" value="0"></progress>
@@ -52,7 +52,7 @@
                 <a class="card fork" id="saveBtn" download="audio.wav">Save</a>
             </div>
         </section>
-        <section id="preview-section" data-hidden="true">
+        <section id="preview-section" data-hidden="true" class="card">
             <h2>Preview</h2>
             <audio id="output-audio" controls></audio>
         </section>
