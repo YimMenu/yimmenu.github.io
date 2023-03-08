@@ -20,6 +20,7 @@ button:focus {
     border: none;
     font-weight: bold;
     font-size: medium;
+    color: var(--text-color);
 }
 
 button:active {
