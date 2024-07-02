@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog | YimMenu</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#2c60e8">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#2c60e8">
+    <meta content="Changelog | YimMenu" property="og:title">
+    <meta content="The free and Open-Source menu for GTA-V" property="og:description">
+    <meta content='https://i.imgur.com/XgKFseu.png' property='og:image'>
+    <meta name="description" content="The free and Open-Source menu for GTA-V">
+    <script defer data-domain="yim.gta.menu" src="https://analytics.yimura.dev/js/script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <header><a href="/">Yim<span class="text--accent">Menu</span></a></header>
+        <ol>
+            <!-- <li><a href="#features">Features</a></li> -->
+            <li><a href="/#download">Download</a></li>
+            <li><a href="/changelog.html" class="active">Changelog</a></li>
+            <li class="icon"><a href="https://github.com/YimMenu/YimMenu/" rel="noreferrer noopener"><svg
+                        aria-label="GitHub" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <title>GitHub</title>
+                        <path fill="currentColor"
+                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                    </svg></a></li>
+        </ol>
+    </nav>
+    <main>
+        <article id="changelog" class="card">
+            <h1 id="changelog">Changelog</h1>
+<p>All notable changes to this project will be documented in this file.</p>
+<h2 id="20240627">2024-06-27</h2>
+<h3 id="miscellaneoustasks">Miscellaneous Tasks</h3>
+<ul>
+<li>Menu revamp (<a href="https://github.com/YimMenu/YimMenu/issues/3274">#3274</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/4589b87553320d7065be68c72089ef1a60e8c9b9">4589b87</a>)</li>
+<li>Complete player and network UI redesign, meant to show all features instead of stuffing them into tiny boxes (<a href="https://github.com/YimMenu/YimMenu/commit/4589b87553320d7065be68c72089ef1a60e8c9b9">4589b87</a>)</li>
+<li>Added option to delete player vehicles (<a href="https://github.com/YimMenu/YimMenu/commit/4589b87553320d7065be68c72089ef1a60e8c9b9">4589b87</a>)</li>
+<li>Better clone player (now clones head blend too) (<a href="https://github.com/YimMenu/YimMenu/commit/4589b87553320d7065be68c72089ef1a60e8c9b9">4589b87</a>)</li>
+<li>Better host token spoofing, with an option to enter your own (<a href="https://github.com/YimMenu/YimMenu/commit/4589b87553320d7065be68c72089ef1a60e8c9b9">4589b87</a>)</li>
+<li>Better host token spoofing detection (<a href="https://github.com/YimMenu/YimMenu/commit/4589b87553320d7065be68c72089ef1a60e8c9b9">4589b87</a>)</li>
+<li>Better desync kick prot detections (<a href="https://github.com/YimMenu/YimMenu/commit/4589b87553320d7065be68c72089ef1a60e8c9b9">4589b87</a>)</li>
+<li>A script blocker for the entire session (per-player options will be added later) (<a href="https://github.com/YimMenu/YimMenu/commit/4589b87553320d7065be68c72089ef1a60e8c9b9">4589b87</a>)</li>
+<li>Added option to spoof data/DLC hashes (<a href="https://github.com/YimMenu/YimMenu/commit/4589b87553320d7065be68c72089ef1a60e8c9b9">4589b87</a>)</li>
+<li>Logging framework that allows developers to easily debug false positives (<a href="https://github.com/YimMenu/YimMenu/commit/4589b87553320d7065be68c72089ef1a60e8c9b9">4589b87</a>)</li>
+<li>Major protection improvements (<a href="https://github.com/YimMenu/YimMenu/commit/4589b87553320d7065be68c72089ef1a60e8c9b9">4589b87</a>)</li>
+<li>Block<em>join</em>reasons cleanup (<a href="https://github.com/YimMenu/YimMenu/issues/3290">#3290</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/10d0e72285491ba1d816f3e2dc78a233eafd965b">10d0e72</a>)</li>
+</ul>
+<h2 id="20240624">2024-06-24</h2>
+<h3 id="miscellaneoustasks-1">Miscellaneous Tasks</h3>
+<ul>
+<li>Filtering blocked modders in session browser (<a href="https://github.com/YimMenu/YimMenu/issues/3257">#3257</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/1196bf5279006dd7789e29319e6543c7f9078728">1196bf5</a>)</li>
+<li>Filters to the player database (<a href="https://github.com/YimMenu/YimMenu/issues/3268">#3268</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/43ddc04dbede596aa81bf926f9a91eb90a345371">43ddc04</a>)</li>
+<li>Update outfit slot name global (<a href="https://github.com/YimMenu/YimMenu/issues/3280">#3280</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/f3cf7b5983fab129efa309ee45a84d68e82191c8">f3cf7b5</a>)</li>
+</ul>
+<h2 id="20240619">2024-06-19</h2>
+<h3 id="miscellaneoustasks-2">Miscellaneous Tasks</h3>
+<ul>
+<li>Add show_success lua binding (<a href="https://github.com/YimMenu/YimMenu/issues/3249">#3249</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/a40f4a4956cbd647ed90a0e7d799e457e541c705">a40f4a4</a>)</li>
+<li>Add break statement to CDynamicEntityGameStateDataNode (<a href="https://github.com/YimMenu/YimMenu/issues/3261">#3261</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/2f79436d8efb7f673b46b39c4e667b5a9f4fe3f3">2f79436</a>)</li>
+</ul>
+<h2 id="20240602">2024-06-02</h2>
+<h3 id="miscellaneoustasks-3">Miscellaneous Tasks</h3>
+<ul>
+<li>Added block<em>join</em>reason (<a href="https://github.com/YimMenu/YimMenu/issues/3215">#3215</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/58972289b198edc89178999ddf5648e718618a8f">5897228</a>)</li>
+<li>Add new spam words (<a href="https://github.com/YimMenu/YimMenu/issues/3204">#3204</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/4adcc05cf35704c0c964e9b0350070435bdc7288">4adcc05</a>)</li>
+</ul>
+<h2 id="20240530">2024-05-30</h2>
+<h3 id="miscellaneoustasks-4">Miscellaneous Tasks</h3>
+<ul>
+<li>Break game and protections (<a href="https://github.com/YimMenu/YimMenu/issues/3203">#3203</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/a218f84eed66c44bb09d21c62978acb271c67792">a218f84</a>)</li>
+<li>Block join reason to reaction (<a href="https://github.com/YimMenu/YimMenu/issues/3190">#3190</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/fd939c48cbd3ca2eac345bfbb3fdf9ba9b1fc165">fd939c4</a>)</li>
+<li>Chat spam to reaction (<a href="https://github.com/YimMenu/YimMenu/issues/3192">#3192</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/78b43027216d753284976c6d96160a0aeea0af66">78b4302</a>)</li>
+<li>Disable Vehicle Heading Updates When Vehicle Flying in First-Person Mode  (<a href="https://github.com/YimMenu/YimMenu/issues/2991">#2991</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/9df32a3adf1b6e7e115803edb6c2eeee1a24896f">9df32a3</a>)</li>
+</ul>
+<h2 id="20240524">2024-05-24</h2>
+<h3 id="miscellaneoustasks-5">Miscellaneous Tasks</h3>
+<ul>
+<li>Revert "Direct implementation of fix vectors (<a href="https://github.com/YimMenu/YimMenu/issues/3147">#3147</a>)" (<a href="https://github.com/YimMenu/YimMenu/issues/3179">#3179</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/0393c5d3917dbc0db084b241841fd0eaaa5e1d2c">0393c5d</a>)</li>
+<li>This reverts commit fb07065aaf3d0777d4cacef3e211d3b3cd6a09db. (<a href="https://github.com/YimMenu/YimMenu/commit/0393c5d3917dbc0db084b241841fd0eaaa5e1d2c">0393c5d</a>)</li>
+<li>Session multiplexer and more (<a href="https://github.com/YimMenu/YimMenu/issues/3167">#3167</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/c1806941993e3a9fe3f3a3671fc2974c296ab927">c180694</a>)</li>
+<li>Remove Unknown Player OOM Kick False Positives (<a href="https://github.com/YimMenu/YimMenu/issues/3170">#3170</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/860a466f826f5ec7450cdcd7a168edc48a927469">860a466</a>)</li>
+<li>Move session lock logic to handle<em>join</em>request (<a href="https://github.com/YimMenu/YimMenu/issues/3136">#3136</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/a568dea653db20b7e9704753aa75f7081f9d45f5">a568dea</a>)</li>
+<li>Improve nightly release (<a href="https://github.com/YimMenu/YimMenu/issues/3171">#3171</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/a9eaaebb42eab516262ac513db1ef44dcdc0dbcf">a9eaaeb</a>)</li>
+</ul>
+<h2 id="20240518">2024-05-18</h2>
+<h3 id="bugfixes">Bug Fixes</h3>
+<ul>
+<li>Fake ban message (<a href="https://github.com/YimMenu/YimMenu/issues/3141">#3141</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/64d187413fe6abf770d2fa769b869fae2b8b440e">64d1874</a>)</li>
+</ul>
+<h3 id="miscellaneoustasks-6">Miscellaneous Tasks</h3>
+<ul>
+<li>Added filtering system to prepare<em>metric</em>for_sending. (<a href="https://github.com/YimMenu/YimMenu/issues/3139">#3139</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/254f64f1afa64588b47e553df3e1ca6a3e40c97a">254f64f</a>)</li>
+<li>Direct implementation of fix vectors (<a href="https://github.com/YimMenu/YimMenu/issues/3147">#3147</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/fb07065aaf3d0777d4cacef3e211d3b3cd6a09db">fb07065</a>)</li>
+<li>Protection improvements (<a href="https://github.com/YimMenu/YimMenu/issues/3146">#3146</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/28aae52e72ffe8f4e514279b06b628b710a1597c">28aae52</a>)</li>
+<li>Refactored DISABLE<em>CONTROL</em>ACTION to use unordered_set. (<a href="https://github.com/YimMenu/YimMenu/issues/3157">#3157</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/54c7dada828384b96c4bffd3a0d8fd87c98a017d">54c7dad</a>)</li>
+<li>Refactored DISABLE<em>CONTROL</em>ACTION to use unordered_set. (<a href="https://github.com/YimMenu/YimMenu/commit/54c7dada828384b96c4bffd3a0d8fd87c98a017d">54c7dad</a>)</li>
+<li>Refactored SCALEFORM<em>MOVIE</em>METHOD<em>ADD</em>PARAM<em>INT hook to reuse the arg0 parameter if format</em>money was on, but the user had less than 1000 casino chips. (<a href="https://github.com/YimMenu/YimMenu/commit/54c7dada828384b96c4bffd3a0d8fd87c98a017d">54c7dad</a>)</li>
+</ul>
+<h2 id="20240515">2024-05-15</h2>
+<h3 id="miscellaneoustasks-7">Miscellaneous Tasks</h3>
+<ul>
+<li>Change MIPH with MPH (<a href="https://github.com/YimMenu/YimMenu/issues/3128">#3128</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/7f8977adcf28da3ff60710249664cd4935452b4a">7f8977a</a>)</li>
+<li>Small Refactor of Session Bad Sport Spoofing (<a href="https://github.com/YimMenu/YimMenu/issues/3134">#3134</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/059f831c52ebe814881bc0aa7d7488c05e914134">059f831</a>)</li>
+<li>Stability Improvements to Black Hole Feature (<a href="https://github.com/YimMenu/YimMenu/issues/3132">#3132</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/00f5c34e2a1e2f60fabbfa9163c5b53c86696239">00f5c34</a>)</li>
+</ul>
+<h2 id="20240515-1">2024-05-15</h2>
+<h3 id="miscellaneoustasks-8">Miscellaneous Tasks</h3>
+<ul>
+<li>Elegant crash complete protection (<a href="https://github.com/YimMenu/YimMenu/issues/3109">#3109</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/b6935096091f50264501c12029ec885ff0862a96">b693509</a>)</li>
+<li>Added file-based log to debug.packet_logs. (<a href="https://github.com/YimMenu/YimMenu/issues/3127">#3127</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/73120c6b94b729136457d6512c0edb35fb5eefb5">73120c6</a>)</li>
+<li>Cleaned up log_node function. (<a href="https://github.com/YimMenu/YimMenu/issues/3130">#3130</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/a25476d918f9a778ecf5aa7b39392580bb970e62">a25476d</a>)</li>
+</ul>
+<h2 id="20240511">2024-05-11</h2>
+<h3 id="bugfixes-1">Bug Fixes</h3>
+<ul>
+<li>Crash in transition (<a href="https://github.com/YimMenu/YimMenu/issues/3091">#3091</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/f81d40854d94ceffb8592eb72058786173633755">f81d408</a>)</li>
+</ul>
+<h3 id="miscellaneoustasks-9">Miscellaneous Tasks</h3>
+<ul>
+<li>Remove redundant nullptr checks in player::get_ped(). (<a href="https://github.com/YimMenu/YimMenu/issues/3095">#3095</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/773f57baccd4574f66d7e2b9f8ed061e91de2349">773f57b</a>)</li>
+<li>Remove <code>this</code> keyword (<a href="https://github.com/YimMenu/YimMenu/commit/773f57baccd4574f66d7e2b9f8ed061e91de2349">773f57b</a>)</li>
+</ul>
+<h2 id="20240510">2024-05-10</h2>
+<h3 id="features">Features</h3>
+<ul>
+<li>Chat translator (<a href="https://github.com/YimMenu/YimMenu/issues/2931">#2931</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/f15cb312e78e17cbbcb2e11fef59fe2527f7855b">f15cb31</a>)</li>
+</ul>
+<h3 id="miscellaneoustasks-10">Miscellaneous Tasks</h3>
+<ul>
+<li>IPL Fix &amp; Formatting (<a href="https://github.com/YimMenu/YimMenu/issues/3082">#3082</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/3a7cad7f72b6286707b1cbbc69d44ed77be29250">3a7cad7</a>)</li>
+<li>Less noticeable multi-kick =&gt; smart-kick (<a href="https://github.com/YimMenu/YimMenu/issues/3066">#3066</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/dada469c55535642a2ac29288d642d10373a93d6">dada469</a>)</li>
+<li>Desync kick protection (<a href="https://github.com/YimMenu/YimMenu/issues/3086">#3086</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/86c63dfff5dab97339ef13d29e3ff89a956644b4">86c63df</a>)</li>
+</ul>
+<p>(<a href="https://github.com/YimMenu/YimMenu/issues/3073">#3073</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/29f226b316a03ad2a933192b035d9a7a31c5e894">29f226b</a>)</p>
+<ul>
+<li>Hotfix (<a href="https://github.com/YimMenu/YimMenu/issues/3072">#3072</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/01f784de1879c24e1ac53784caaa2a21c191eb69">01f784d</a>)</li>
+<li>Fix the Radio Sync Fix (<a href="https://github.com/YimMenu/YimMenu/issues/3060">#3060</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/d65f7f2745c97983e35a74bbdada3f773f7d39a4">d65f7f2</a>)</li>
+<li>Add .pdb file to ci workflow (<a href="https://github.com/YimMenu/YimMenu/issues/3069">#3069</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/5065b449cc820869483c6a623ca5322c04e80519">5065b44</a>)</li>
+<li>Crash Fixes (?) (<a href="https://github.com/YimMenu/YimMenu/issues/3081">#3081</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/3d77d92db2a7ab5841a21f608e0588b9871c783c">3d77d92</a>)</li>
+<li>Fix player list crash (<a href="https://github.com/YimMenu/YimMenu/issues/3080">#3080</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/9062491f1d00a46b0d739aea2e313b7cce1431eb">9062491</a>)</li>
+<li>Fixed get<em>rockstar</em>id returning an incorrect type. (<a href="https://github.com/YimMenu/YimMenu/commit/9062491f1d00a46b0d739aea2e313b7cce1431eb">9062491</a>)</li>
+<li>Added more OOP usage of get<em>rockstar</em>id when applicable. (<a href="https://github.com/YimMenu/YimMenu/commit/9062491f1d00a46b0d739aea2e313b7cce1431eb">9062491</a>)</li>
+</ul>
+<h3 id="refactor">Refactor</h3>
+<ul>
+<li>Remove trailing whitespace (<a href="https://github.com/YimMenu/YimMenu/commit/5065b449cc820869483c6a623ca5322c04e80519">5065b44</a>)</li>
+</ul>
+<h2 id="20240508">2024-05-08</h2>
+<h3 id="miscellaneoustasks-11">Miscellaneous Tasks</h3>
+<ul>
+<li>Refactor of Player Wanted Level (<a href="https://github.com/YimMenu/YimMenu/issues/3070">#3070</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/1b82c94d4dc4c0f754511c4c219d12e974422897">1b82c94</a>)</li>
+<li>Sanity checks for get<em>net</em>data. (<a href="https://github.com/YimMenu/YimMenu/issues/3068">#3068</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/b7d75d4fcd3f3275002483667b6362c9e687d726">b7d75d4</a>)</li>
+</ul>
+<h2 id="20240506">2024-05-06</h2>
+<h3 id="miscellaneoustasks-12">Miscellaneous Tasks</h3>
+<ul>
+<li>Allow Trusted Players &amp; Friends to Request Control (<a href="https://github.com/YimMenu/YimMenu/issues/3047">#3047</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/d75bebd3862a961924585487249e079f00567324">d75bebd</a>)</li>
+<li>PlayerDB Delete Untrusted Players (<a href="https://github.com/YimMenu/YimMenu/issues/3053">#3053</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/f4449bad9969c142b165776e06c5a758f3e8225b">f4449ba</a>)</li>
+<li>Start Script Activity Session Check (<a href="https://github.com/YimMenu/YimMenu/issues/3045">#3045</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/1066aefa03a9222122330f1f0295f7d5324a05ab">1066aef</a>)</li>
+<li>Remove useless kicks (<a href="https://github.com/YimMenu/YimMenu/issues/3061">#3061</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/dfca5c7567d4c5cd1d5f971823182c5cacc85a05">dfca5c7</a>)</li>
+<li>Remove Start LS Customs Button from LS Customs Menu (<a href="https://github.com/YimMenu/YimMenu/issues/3065">#3065</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/499fc6b9069730ad25576c38492bfb77f5db9422">499fc6b</a>)</li>
+</ul>
+<h2 id="20240503">2024-05-03</h2>
+<h3 id="bugfixes-2">Bug Fixes</h3>
+<ul>
+<li>Not closing when the selected player left (<a href="https://github.com/YimMenu/YimMenu/issues/3039">#3039</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/d9576584f5750a69495e60ba002ea2c7cba9ddf4">d957658</a>)</li>
+</ul>
+<h3 id="miscellaneoustasks-13">Miscellaneous Tasks</h3>
+<ul>
+<li>Fix multiple crashes. (<a href="https://github.com/YimMenu/YimMenu/issues/3035">#3035</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/e18efc618013eb6d9475c4de153500481b43aee9">e18efc6</a>)</li>
+<li>Add more translation keys (<a href="https://github.com/YimMenu/YimMenu/issues/3024">#3024</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/a7934ba357689f0d305f9f554e1d84a3a124a379">a7934ba</a>)</li>
+</ul>
+<h2 id="20240501">2024-05-01</h2>
+<h3 id="bugfixes-3">Bug Fixes</h3>
+<ul>
+<li>Fix repair not working after going in water (<a href="https://github.com/YimMenu/YimMenu/issues/2996">#2996</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/435963d3b6542442648f1e0faf94fd2ec41c21cf">435963d</a>)</li>
+</ul>
+<h3 id="miscellaneoustasks-14">Miscellaneous Tasks</h3>
+<ul>
+<li>Updated the max characters from 64 characters to 41, which seems to be the maximum the Socialclub API actually saves and returns. (<a href="https://github.com/YimMenu/YimMenu/issues/3014">#3014</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/7a2540391291b4c35154fcc8ff25ba4df5df5a3b">7a25403</a>)</li>
+<li>Fixed vehicle extras to match the scripts (<a href="https://github.com/YimMenu/YimMenu/issues/3019">#3019</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/3470660b8d9f6981cb71cb7fcd02b2e727218725">3470660</a>)</li>
+<li>Refactor format money to use manual methods of comma addition. (<a href="https://github.com/YimMenu/YimMenu/issues/3020">#3020</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/d13b49ca0b7ee3f290de8ab073a158251fa456bd">d13b49c</a>)</li>
+</ul>
+<h2 id="20240430">2024-04-30</h2>
+<h3 id="bugfixes-4">Bug Fixes</h3>
+<ul>
+<li>Missing translations (<a href="https://github.com/YimMenu/YimMenu/issues/3004">#3004</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/5fec32df4c5b7bc648cb2170d96d79e637a91a3e">5fec32d</a>)</li>
+</ul>
+<h3 id="features-1">Features</h3>
+<ul>
+<li>Added Infinite Vehicle Ammo (<a href="https://github.com/YimMenu/YimMenu/issues/3003">#3003</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/03b65d53752fc8c0cead2679102f88b1cdf63bcb">03b65d5</a>)</li>
+</ul>
+<h3 id="miscellaneoustasks-15">Miscellaneous Tasks</h3>
+<ul>
+<li>Chinese chat spam blacklist (<a href="https://github.com/YimMenu/YimMenu/issues/2994">#2994</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/f0cd838bb1fe382b1ecd8ffdcc305a089b78fd75">f0cd838</a>)</li>
+<li>Added "Enable MK1 and MK2 Weapons" feature. (<a href="https://github.com/YimMenu/YimMenu/issues/3000">#3000</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/ccb359136499c751536aebfc566dd593de538805">ccb3591</a>)</li>
+<li>Bypass Profanity Checks (<a href="https://github.com/YimMenu/YimMenu/issues/3010">#3010</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/222e98840c1cddcc009fa7202f1585b637bbde14">222e988</a>)</li>
+<li>Increased the maximum length of CEO Name from 15 to 64 characters. (<a href="https://github.com/YimMenu/YimMenu/issues/3011">#3011</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/17a7ad65b939a269c4307041ca110bfaae13b210">17a7ad6</a>)</li>
+<li>Added FMMC<em>KEY</em>TIP15 replacement of 15 to 64. (<a href="https://github.com/YimMenu/YimMenu/commit/17a7ad65b939a269c4307041ca110bfaae13b210">17a7ad6</a>)</li>
+<li>Removed legacy multiplayer chat filter. (<a href="https://github.com/YimMenu/YimMenu/commit/17a7ad65b939a269c4307041ca110bfaae13b210">17a7ad6</a>)</li>
+<li>Add motorcycle club, too. (<a href="https://github.com/YimMenu/YimMenu/issues/3013">#3013</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/d1d72e54b99c18b36d72cee1cc1623f0f40c3cb1">d1d72e5</a>)</li>
+<li>Refactor add<em>callback</em>for<em>labels to take an initializer</em>list. (<a href="https://github.com/YimMenu/YimMenu/commit/d1d72e54b99c18b36d72cee1cc1623f0f40c3cb1">d1d72e5</a>)</li>
+</ul>
+<h2 id="20240428">2024-04-28</h2>
+<h3 id="bugfixes-5">Bug Fixes</h3>
+<ul>
+<li>Prevent autokick of friends and trusted (<a href="https://github.com/YimMenu/YimMenu/issues/2989">#2989</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/ff55db8fa3ae1721dbcd166ed2c26407844e325e">ff55db8</a>)</li>
+</ul>
+<h3 id="features-2">Features</h3>
+<ul>
+<li>Added UI element to toggle give collectible (<a href="https://github.com/YimMenu/YimMenu/issues/2990">#2990</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/fcf74bc19895526636dcb20088723478b8deb9dc">fcf74bc</a>)</li>
+</ul>
+<h3 id="miscellaneoustasks-16">Miscellaneous Tasks</h3>
+<ul>
+<li>Added UI element to toggle give collectible (<a href="https://github.com/YimMenu/YimMenu/issues/2990">#2990</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/fcf74bc19895526636dcb20088723478b8deb9dc">fcf74bc</a>)</li>
+</ul>
+<h2 id="20240422">2024-04-22</h2>
+<h3 id="features-3">Features</h3>
+<ul>
+<li>Add compiler hints (<a href="https://github.com/YimMenu/YimMenu/commit/ca1e7e6b419d68bfa6673da0e38b9e52721aa4aa">ca1e7e6</a>)</li>
+<li>Add compiler hint to crashes (<a href="https://github.com/YimMenu/YimMenu/commit/ca1e7e6b419d68bfa6673da0e38b9e52721aa4aa">ca1e7e6</a>)</li>
+<li>Add likely compiler hint to on_present (<a href="https://github.com/YimMenu/YimMenu/commit/ca1e7e6b419d68bfa6673da0e38b9e52721aa4aa">ca1e7e6</a>)</li>
+<li>Add compiler hints (<a href="https://github.com/YimMenu/YimMenu/commit/ca1e7e6b419d68bfa6673da0e38b9e52721aa4aa">ca1e7e6</a>)</li>
+</ul>
+<h3 id="miscellaneoustasks-17">Miscellaneous Tasks</h3>
+<ul>
+<li>Added formatting to money on HUD. (<a href="https://github.com/YimMenu/YimMenu/issues/2957">#2957</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/b1bf477d1fb046e663d931b7b5b86b933ef938ef">b1bf477</a>)</li>
+<li>Give optimisation hints to compiler (<a href="https://github.com/YimMenu/YimMenu/issues/2929">#2929</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/ca1e7e6b419d68bfa6673da0e38b9e52721aa4aa">ca1e7e6</a>)</li>
+<li>Added translation TODO (<a href="https://github.com/YimMenu/YimMenu/commit/ca1e7e6b419d68bfa6673da0e38b9e52721aa4aa">ca1e7e6</a>)</li>
+<li>Added hook likely/unlikely switches to debug/crash scenarios. (<a href="https://github.com/YimMenu/YimMenu/commit/ca1e7e6b419d68bfa6673da0e38b9e52721aa4aa">ca1e7e6</a>)</li>
+<li>Added HEX<em>TO</em>UPPER call on the AC verifier offsets. (<a href="https://github.com/YimMenu/YimMenu/commit/ca1e7e6b419d68bfa6673da0e38b9e52721aa4aa">ca1e7e6</a>)</li>
+<li>Added more fuzzer unlikely attributes. (<a href="https://github.com/YimMenu/YimMenu/commit/ca1e7e6b419d68bfa6673da0e38b9e52721aa4aa">ca1e7e6</a>)</li>
+<li>Replaced some hard coded numbers with their unhashed _J variants. (<a href="https://github.com/YimMenu/YimMenu/commit/ca1e7e6b419d68bfa6673da0e38b9e52721aa4aa">ca1e7e6</a>)</li>
+<li>Added more unlikely attributes to singleton initializer checks. (<a href="https://github.com/YimMenu/YimMenu/commit/ca1e7e6b419d68bfa6673da0e38b9e52721aa4aa">ca1e7e6</a>)</li>
+<li>Added more likely/unlikely attributes to certain scenarios. (<a href="https://github.com/YimMenu/YimMenu/commit/ca1e7e6b419d68bfa6673da0e38b9e52721aa4aa">ca1e7e6</a>)</li>
+</ul>
+<h2 id="20240417">2024-04-17</h2>
+<h3 id="features-4">Features</h3>
+<ul>
+<li>Bump build number (<a href="https://github.com/YimMenu/YimMenu/issues/2949">#2949</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/3a84f91fd8f3b102140d8f1b07065e0d640617d9">3a84f91</a>)</li>
+</ul>
+<h3 id="miscellaneoustasks-18">Miscellaneous Tasks</h3>
+<ul>
+<li>Fix for GTA Build 3179 (<a href="https://github.com/YimMenu/YimMenu/issues/2946">#2946</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/382ddb319b988ea64e13b89a945aeb3f96aff546">382ddb3</a>)</li>
+<li>Removed old and unused security pointer/signature (<a href="https://github.com/YimMenu/YimMenu/commit/382ddb319b988ea64e13b89a945aeb3f96aff546">382ddb3</a>)</li>
+<li>Updated GTAV-Classes (<a href="https://github.com/YimMenu/YimMenu/commit/382ddb319b988ea64e13b89a945aeb3f96aff546">382ddb3</a>)</li>
+</ul>
+<h2 id="20240404">2024-04-04</h2>
+<h3 id="features-5">Features</h3>
+<ul>
+<li>Expand Turkish glyph range (<a href="https://github.com/YimMenu/YimMenu/issues/2915">#2915</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/075f30fc7b676e0c5a740da4bc6b844e544ba4e4">075f30f</a>)</li>
+</ul>
+<h3 id="miscellaneoustasks-19">Miscellaneous Tasks</h3>
+<ul>
+<li>Fixed vehicles in preview exploding. (<a href="https://github.com/YimMenu/YimMenu/issues/2908">#2908</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/5703338d67475ec755c88443b3faa6578b6df6d5">5703338</a>)</li>
+<li>Closes #2905 (<a href="https://github.com/YimMenu/YimMenu/commit/5703338d67475ec755c88443b3faa6578b6df6d5">5703338</a>)</li>
+<li>Fixed set<em>mp</em>bitset being called from vehicle::spawned if the is_networked parameter was false. (<a href="https://github.com/YimMenu/YimMenu/commit/5703338d67475ec755c88443b3faa6578b6df6d5">5703338</a>)</li>
+</ul>
+<h2 id="20240331">2024-03-31</h2>
+<h3 id="bugfixes-6">Bug Fixes</h3>
+<ul>
+<li>Fix chat not seen by other players (<a href="https://github.com/YimMenu/YimMenu/issues/2900">#2900</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/4e1deb4ef09f6b65b6e3bc42c423fe3e28ac23cf">4e1deb4</a>)</li>
+</ul>
+<h3 id="miscellaneoustasks-20">Miscellaneous Tasks</h3>
+<ul>
+<li>Refactor m<em>rockstar</em>id into its proper type of a 64-bit signed integer. (<a href="https://github.com/YimMenu/YimMenu/issues/2901">#2901</a>) (<a href="https://github.com/YimMenu/YimMenu/commit/8425cae0f662f9504135468a7269dac8ce0762ec">8425cae</a>)</li>
+</ul>
+<h2 id="20240330">2024-03-30</h2>
+<h3 id="bugfixes-7">Bug Fixes</h3>
+<ul>
+<li>Fix nlohmann potential throw in ped outfit (<a href="https://github.com/YimMenu/YimMenu/issues/2894">#2894</a>) ([629cff2](ht</li>
+</ul>
+        </article>
+    </main>
+    <footer>
+        <span style="font-weight:bold;">Yim<span class="text--accent">Menu</span></span> is a hobby project made by <a
+            href="https://github.com/YimMenu/YimMenu/graphs/contributors" style="font-weight:bold;"
+            rel="noreferrer noopener">a community of independent developers</a> in their free time.<br />
+        <div id="metadata_container" data-hidden="true">
+            <span id="last_update"></span>
+            <span id="game_version"></span>
+        </div>
+        <span style="font-size:small;">GRAND THEFT AUTO and GRAND THEFT AUTO V FIVE are trademarks of Take-Two
+            Interactive Software, Inc. We are not affiliated with, authorized by, sponsored by, or otherwise approved by
+            Take-Two Interactive Software, Inc.</span>
+    </footer>
+    <script src="assets/js/metadata.js"></script>
+</body>
+
+</html>

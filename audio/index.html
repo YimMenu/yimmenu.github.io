@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AudioConverter - YimMenu</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/audio.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#2c60e8">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#2c60e8">
+    <meta content="AudioConverter - YimMenu" property="og:title">
+    <meta content="Convert audio for use with YimMenu" property="og:description">
+    <meta content='https://i.imgur.com/XgKFseu.png' property='og:image'>
+    <meta name="description" content="Convert audio for use with YimMenu">
+    <script defer data-domain="yim.gta.menu" src="https://analytics.yimura.dev/js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <p>Convert audio for use with YimMenu</p>
+    </header>
+    <main>
+        <section class="card">
+            <h2>How-to</h2>
+            <ol>
+                <li>Select the file you want to convert</li>
+                <li>Wait for it to finish</li>
+                <li>Download it</li>
+                <li>Place in <code>%appdata%\YimMenu</code></li>
+                <li>Make sure the name is <code>audio.wav</code></li>
+            </ol>
+        </section>
+        <section class="card">
+            <label for="uploader" class="file-label">
+                Select or drag and drop a file on the browse button.
+            </label>
+            <input type='file' accept=".mp3, .wav, .aac" id="uploader" />
+        </section>
+        <section id="info-section" data-hidden="true" class="card">
+            <p id="message"></p>
+            <label for="progressBar" id="progressBarLabel">0%</label>
+            <progress id="progressBar" max="1" value="0"></progress>
+
+            <div id="buttons">
+                <button id="cancelBtn" class="card fork" onClick="cancel()">Cancel</button>
+                <a class="card fork" id="saveBtn" download="audio.wav">Save</a>
+            </div>
+        </section>
+        <section id="preview-section" data-hidden="true" class="card">
+            <h2>Preview</h2>
+            <audio id="output-audio" controls></audio>
+        </section>
+    </main>
+    <script src="/coi-serviceworker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.11.6/dist/ffmpeg.min.js"
+        integrity="sha256-Z7x9xNwEIoKGv7GgRWmpkSvw8lU0y9hGJlbGYNVVzqM=" crossorigin="anonymous"></script>
+    <script src="/assets/js/ffmpeg.js"></script>
+</body>
+
+</html>
