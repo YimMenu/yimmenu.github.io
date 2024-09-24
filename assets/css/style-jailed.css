@@ -1,0 +1,45 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+    -moz-tab-size: 4;
+    tab-size: 4;
+    word-break: normal;
+    background-color: var(--background);
+    font-family: Roboto, sans-serif;
+}
+
+*,
+:after,
+:before {
+    background-repeat: no-repeat;
+    box-sizing: inherit
+}
+
+:after,
+:before {
+    text-decoration: inherit;
+    vertical-align: inherit
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+header > img {
+    width: 256px;
+    max-width: 70vw;
+}
+
+main {
+    max-width: min(50rem, 90vw);
+}
