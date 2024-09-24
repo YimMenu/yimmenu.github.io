@@ -19,32 +19,32 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Checkout YimMenu
-        uses: actions/checkout@v3
-        with:
-          repository: YimMenu/YimMenu
-          path: YimMenu
-          fetch-depth: 0
+      # - name: Checkout YimMenu
+      #   uses: actions/checkout@v3
+      #   with:
+      #     repository: YimMenu/YimMenu
+      #     path: YimMenu
+      #     fetch-depth: 0
 
-      - name: Set up git-cliff
-        uses: kenji-miyake/setup-git-cliff@v1
+      # - name: Set up git-cliff
+      #   uses: kenji-miyake/setup-git-cliff@v1
 
-      - name: Generate Changelog
-        run: |
-          mv .github/changelog_generator.js YimMenu
-          mv .github/cliff.toml YimMenu
-          mv .github/replace.js .
-          cd YimMenu
-          git log  --format="%cs#%H" | node changelog_generator.js
-          cd ..
-          cp YimMenu/changelog.md .
-          cp changelog.md changelog.txt
-          npx --yes showdown makehtml -i changelog.md -o changelog_from_md.html
-          node replace.js
-          rm -rf *.js *.template.html .github/ changelog_from_md.html YimMenu/
-          curl -o ./coi-serviceworker.min.js https://raw.githubusercontent.com/gzuidhof/coi-serviceworker/27a76b676c67202fb227deb97f9d911d41f55965/coi-serviceworker.min.js
+      # - name: Generate Changelog
+      #   run: |
+      #     mv .github/changelog_generator.js YimMenu
+      #     mv .github/cliff.toml YimMenu
+      #     mv .github/replace.js .
+      #     cd YimMenu
+      #     git log  --format="%cs#%H" | node changelog_generator.js
+      #     cd ..
+      #     cp YimMenu/changelog.md .
+      #     cp changelog.md changelog.txt
+      #     npx --yes showdown makehtml -i changelog.md -o changelog_from_md.html
+      #     node replace.js
+      #     rm -rf *.js *.template.html .github/ changelog_from_md.html YimMenu/
+      #     curl -o ./coi-serviceworker.min.js https://raw.githubusercontent.com/gzuidhof/coi-serviceworker/27a76b676c67202fb227deb97f9d911d41f55965/coi-serviceworker.min.js
 
-      - run: rm .gitignore
+      # - run: rm .gitignore
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
